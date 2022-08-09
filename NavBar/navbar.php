@@ -1,7 +1,7 @@
 <div class="fond_header">
     <header>
         <div class="hamburger">
-            <img src="../images/logo_hamburger_white" alt="Logo menu hamburger">
+            <img src="../images/logo_hamburger_white.svg" alt="Logo menu hamburger">
         </div>
         <div><img class="logo_DW" src="../images/DW_white.svg" alt=""></div>
         <nav>

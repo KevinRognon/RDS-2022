@@ -10,19 +10,17 @@
 </head>
 <body>
     <?php include("../NavBar/navbar.php"); ?>
-    <div class="container_dw">
+
         <section class="DW">
             <div class="info_dorian">
                 <p>
                     <span class="auteur">Dorian Warlot<br></span>
-                    Un voyage<br>pour devenir<br>UX/UI Designer
+                    <h1>Un voyage<br>pour devenir<br>UX/UI Designer<h1>
                 </p>
             </div>
-            <div class="bloc_img_dorian">
                 <img class=img_dorian src="../images/DW.png" alt="Image de Dorian Warlot masqué">
-            </div>
         </section>
-    </div>
+     <hr>
         
     <section class="informations">
         <div class="info_div">
@@ -57,12 +55,12 @@
                 </div>
         </section>
     </div>
-
+ 
     <section class="parrallele">
         <div class="parrallele_container">
             <div class="text_parrallele">
-                <p><h2>En parrallèle,</h2> j’ai accompagné mes collègues dans diverses projet en UX et en UI, ce qui m’a permit sur une courte période, de toucher
-                     à plusieurs interfaces et fonctionnalités du site. </p>
+                <p><h2>En parrallèle,</h2>j’ai accompagné mes collègues dans diverses projet en UX et en UI, ce qui m’a permit sur une courte période, de toucher
+                     à plusieurs interfaces et fonctionnalités du site.</p>
             </div>
             <div>
                 <img src="../images/cinématique_récla_1.png" alt="Cinématique récla 1">

@@ -3,17 +3,19 @@
 }
 
 :root{
-    --color1: #FEDC9D;
-    --color_bg_design: #FFC8BD;
-    --color_bg_testapic: #FFF1A8;
-    --color_bg_experience: #CCE1B1;
+    --color_noir: #000;
+    --color_jaune: #FFD700;
+    --color_blanc: #fff;
+    --color_bg_design: #151519;
+    --color_bg_testapic: #151519;
+    --color_bg_experience: #151519;
     --width_section: 1200px;
 
 }
 
 @font-face {
     font-family: 'Fira';
-    src: url(../fonts/FiraSans.otf);
+    src: url(../fonts/FiraSans.otf); 
 }
 @font-face {
     font-family: 'Quantico';
@@ -26,23 +28,33 @@ h1{
     font-family: 'Quantico';
     font-size: 42px;
     font-weight: bold;
+    color: var(--color_blanc);
+
 }
 h2{
     font-family: 'Quantico';
     font-size: 36px;
     font-weight: bold;
+    color: var(--color_blanc);
+    margin-bottom: 12px;
 }
 h3{
     font-family: 'Quantico';
     font-size: 30px;
     font-weight: bold;
+    color: var(--color_blanc);
 }
 h4{
     font-family: 'Quantico';
     font-size: 24px;
     font-weight: bold;
+    color: var(--color_blanc);
 }
 
+p{
+    color: var(--color_blanc);
+    font-family: 'Fira';
+}
 
 
 /* MEDIA RESPONSIVE */
@@ -90,7 +102,7 @@ html, *{
 }
 
 body{
-    background-color: white;
+    background-color: var(--color_noir);
     font-family: 'Fira';
     margin: 0 auto;
     max-width: 100vw;
@@ -158,45 +170,24 @@ nav a:hover{
 }
 
 /* RESPONSIVE */
-@media screen and (max-width: 900px) {
-    .DW{
-        flex-direction: column-reverse;
-        padding-top: 140px;
-        text-align: center;
-    }
-}
-
 
 
 .DW{
     max-width: var(--width_section);
     margin: 0 auto;
-    height: 566px;
     
     display: flex;
-    align-items: stretch;
+    align-items: center;
     justify-content: space-between;
-    
+    margin-bottom: 3%;
     background-color: var(--color1);
 }
 .DW .img_dorian{
-    width: 100%;
+   max-width: 45%;
     
 }
-.DW .bloc_img_dorian img{
-    max-width: 90%;
-    max-height: 700px;
-    min-width: 300px;
-    min-height: 400px;
-    /* width: 35vw;
-    height: 35vw; */
-    /* width: 587px; */
-}
 
-.container_dw{
-    max-width: 100vw;
-    background-color: var(--color1);
-}
+
 
 .DW .info_dorian{
     max-width: 460px;
@@ -215,6 +206,24 @@ nav a:hover{
     font-weight: 700;
 }
 
+hr {
+    height: 10px;
+    max-width: 1200px;
+    background-color: var(--color_blanc);
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .DW{
+        flex-direction: column-reverse;
+        padding-top: 140px;
+        text-align: center;
+    }
+}
+
+
+
 /* Comment suis-je arrivé là? */
 
 .informations{
@@ -232,12 +241,19 @@ nav a:hover{
     align-items: center;
 
     text-align: justify;
+}
 
+.info_div p{
+    color: var(--color_blanc);
+}
 
+.info_div p{
+    color: var(--color_blanc);
 }
 .info_div img{
     margin-top: 30px;
     max-width: 100%;
+
 }
 
 .info_div h2{
@@ -255,11 +271,7 @@ nav a:hover{
 
 /* RESPONSIVE */
 
-@media screen and (max-width: 900px){
-    .design{
-        flex-direction: column;
-    }
-}
+
 
 .design_bg{
     background-color: var(--color_bg_design);
@@ -281,7 +293,11 @@ nav a:hover{
 
 .design .text_design{
     max-width: 400px;
-
+}
+@media screen and (max-width: 900px){
+    .design{
+        flex-direction: column;
+    }
 }
 
 /*
@@ -350,18 +366,6 @@ nav a:hover{
 }
 /* En parrallèle _______________________________________________________*/
 
-/* RESPONSIVE */
-
-@media screen and (max-width: 900px) {
-    .parrallele_container .text_parrallele{
-        margin: 0 auto;
-    }
-
-    .parrallele_container img, .parrallele_container p{
-        display: none;
-    }
-}
-
 .parrallele_container{
     display: flex;
     flex-direction: column;
@@ -389,16 +393,25 @@ nav a:hover{
 .parrallele_container h2{
     display: inline;
 }
+/* RESPONSIVE */
+
+@media screen and (max-width: 900px) {
+    .parrallele_container .text_parrallele{
+        margin: 0 auto;
+    }
+
+    .parrallele_container img, .parrallele_container p{
+        display: none;
+    }
+}
+
+
 
 /* Testapic _________________________________________________________________________ */
 
 /* RESPONSIVE */
 
-@media screen and (max-width: 900px) {
-    .section_testapic .testapic{
-        flex-direction: column;
-    }
-}
+
 
 .section_testapic{
     background-color: var(--color_bg_testapic);
@@ -423,13 +436,16 @@ nav a:hover{
     width: 100%;
 }
 
-/* L'agilité? _________________________________________________________________________*/
-
 @media screen and (max-width: 900px) {
-    .agilite{
+    .section_testapic .testapic{
         flex-direction: column;
     }
 }
+
+/* L'agilité? _________________________________________________________________________*/
+
+
+
 
 .agilite{
     display: flex;
@@ -449,15 +465,26 @@ nav a:hover{
     text-align: justify;
 }
 
-.agilite .agilite_img{
-    width: 100%;
+.agilite_img{
+    max-width: 50%;
 }
 
 @media screen and (max-width: 900px) {
+    .agilite{
+        flex-direction: column;
+    }
+    
+    .agilite img{
+        max-width: 80%;
+    }
     .agilite_text{
-        padding-left: 30px;
+        padding-left: 50px;
+    }
     }
 }
+
+
+
 /* Experience _________________________________________________________________________*/
 
 /* RESPONSIVE */
